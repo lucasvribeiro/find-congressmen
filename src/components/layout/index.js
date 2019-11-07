@@ -13,7 +13,7 @@ const MainLayout = props => {
   return (
     <div className = "layout">
       <Layout>
-        <Header />
+        <Header onChange = { props.onChange } menu = { props.menu }/>
         <Content>{props.children}</Content>
         <Footer>Footer</Footer>
       </Layout>

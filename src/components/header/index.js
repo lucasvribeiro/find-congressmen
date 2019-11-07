@@ -1,23 +1,30 @@
 import React from 'react'
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu } from 'antd';
 
 import './index.css'
 
 const { Header } = Layout;
 
-const MainHeader = () => {
+const logo = require('../../images/logo.png');
+
+const MainHeader = props => {
 
   return (
     <Header className = "header">
-        {/* <img src = "C:/Users/lucas\Documents/GitHub/appmoove-test/public/logo192.png"  alt="Logo" height="90" width="90"/> */}
+      <div className = "logo">
+        <img src = {logo}  alt="Logo" width = "50" height = "50"/>
+      </div>
+        
  
       <Menu
+        className = "menu"
+        onSelect = {props.onChange}
         mode="horizontal"
-        defaultSelectedKeys={['2']}
+        defaultSelectedKeys={[props.menu]}
         style={{ lineHeight: '64px', textAlign: 'left' }}
       >
-        <Menu.Item key="1">Busca</Menu.Item>
-        <Menu.Item key="2">Gráfico</Menu.Item>
+        <Menu.Item key="1" className = "menu-item">Busca</Menu.Item>
+        <Menu.Item key="2" className = "menu-item">Gráfico</Menu.Item>
       </Menu>
     </Header>
   );

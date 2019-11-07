@@ -1,3 +1,60 @@
-.profile {
+.profile-photo {
+    margin: 0 0 0 0;
+    text-align: center;
+    height: 14vw;
+}
+
+.profile-card {
+    margin: 4vw auto;
+    width: 40%;
+
+
+}
+
+.info {
+    margin: auto;
+    width: 40%;
+}
+
+.avatar {
+    margin: 4vw 0 0 0vw;
+}
+
+.nome-eleitoral {
+    margin: 0 0 0 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+}
+
+.nome-civil {
+    margin: 0 0 0 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
+    font-style: italic;
+
+}
+
+.ant-card-meta-detail {
+    overflow: hidden;
+    margin-top: 24px;
+}
+
+.ant-card-meta-title {
+    overflow: hidden;
+    margin-bottom: 0px !important;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ant-card-meta-description {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
 }

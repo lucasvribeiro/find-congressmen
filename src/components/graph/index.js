@@ -26,7 +26,6 @@ const options = {
     }
 
 const Graph = (props) => {
-    if (!props.loading){
 
         console.log(options)
         return (
@@ -51,11 +50,6 @@ const Graph = (props) => {
             }]
         }}/>
       )
-    } else {
-        return <Text>still loading...</Text>
-    }
-          
-     
-    }
+	}
   
 export default Graph;

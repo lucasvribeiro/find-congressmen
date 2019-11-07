@@ -1,3 +1,29 @@
-.home {
+.buscar{
+    padding: 150px 0 30px 0;
+    margin: 2px 0 0 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vw;
+    color: #ffffff;
+
+}
+
+.div-buscar{
+    background-image: url('../../images/background.jpeg');
+}
+
+.select {
+    width: 50vw;
+    margin-bottom: 200px;
+}
+
+.ant-select-open .ant-select-arrow-icon svg {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.menu-item:hover{
+    background-color: #0c5e3d1f !important;
+    transition-duration: 0.5s !important;
 
 }
