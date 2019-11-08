@@ -130,7 +130,7 @@ const Home = () => {
 
                 { 
                     selectedMenu === '1' ?
-                        <div></div> 
+                        <div className = "white-div"></div> 
                     : despesas.length === 0 ? 
                         <img src = { loadingGif } width = "100" height = "100"/>
                     : 

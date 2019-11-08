@@ -17,6 +17,10 @@ body {
     overflow-x: hidden;
 }
 
+.white-div {
+    background-color: white;
+}
+
 .graph-title {
     padding: 5vw 0 2vw 10vw;
     text-align: left;
