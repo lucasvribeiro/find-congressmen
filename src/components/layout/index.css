@@ -3,4 +3,12 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: white !important;
+}
+
+.ant-layout-content {
+    -ms-flex: auto;
+    flex: auto;
+    min-height: 0;
+    background-color: white;
 }
