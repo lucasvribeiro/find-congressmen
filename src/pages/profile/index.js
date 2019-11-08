@@ -1,18 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Row, Col, Typography, Avatar, Divider, Card, Icon } from 'antd'
+import { Avatar, Card, Icon, Divider, Tag } from 'antd'
 import axios from 'axios'
 
 import './index.css'
 
-// nomeCivil: deputado.nomeCivil,
-// nomeEleitoral: deputado.ultimoStatus.nomeEleitoral,
-// dataNascimento: deputado.dataNascimento,
-// municipioNascimento: deputado.municipioNascimento,
-// ufNascimento: deputado.ufNascimento,
-// partido: deputado.ultimoStatus.siglaPartido,
-// email: deputado.ultimoStatus.email
-
-const { Text } = Typography
 const { Meta } = Card;
 
 const Profile = (props) => {
@@ -31,43 +22,53 @@ const Profile = (props) => {
 
     return (
         <div className = "main-div">
-            <div className = "profile-photo">
             <Card className = "profile-card">
-                    {deputado != '' ? 
+                <div className = "card-title">
+                    {deputado !== '' ? 
                         <Meta
                         avatar={
-                          <Avatar src = {deputado.ultimoStatus.urlFoto} style = {{ height: '6vw', width: '6vw' }}/>
+                        <Avatar src = {deputado.ultimoStatus.urlFoto} className = "avatar"/>
                         }
                         title = { deputado.nomeCivil }
                         description = { deputado.ultimoStatus.nomeEleitoral }
-                      />
-                      :null }
+                    />
+                    :null }
+                </div>
+                <div className = "info">
+                    <Divider orientation="left">
+                        <Icon type="info-circle" /> Informações Pessoais
+                    </Divider>
+
+                    <Tag className = "card-content">
+                        Nascimento: {deputado.dataNascimento} 
+                    </Tag>
+
+                    <Divider orientation="left">
+                        <Icon type="home" /> Cidade Natal
+                    </Divider>
+
+                    <Tag className = "card-content">
+                        {deputado.municipioNascimento} - {deputado.ufNascimento}
+                    </Tag>
+
+                    <Divider orientation="left">
+                        <Icon type="mail" /> Contato
+                    </Divider>
+
+                    {deputado !== '' ?
+                        <Tag className = "card-content">{deputado.ultimoStatus.email}</Tag>
+                    : null}
+
+                    <Divider orientation="left">
+                        <Icon type="team" /> Partido
+                    </Divider>
+                    
+                    {deputado !== '' ? 
+                        <Tag className = "card-content" >{deputado.ultimoStatus.siglaPartido}</Tag>
+                    : null}
+                </div>
             </Card>
-            </div>
 
-            <div className = "info">
-                <Row>
-                    <Col span={24}>
-                    <Card title = {
-                        <div>
-                            Informações Pessoais
-                            <div style = {{ textAlign: 'right' }}> <Icon type = "info" /> </div>
-                            
-                        </div>
-                    } >
-                        <Text>Data de Nascimento: {deputado.dataNascimento} </Text>
-                        <Text>Nascido em: {deputado.municipioNascimento} - {deputado.ufNascimento} </Text>
-                        {deputado != '' ? 
-                            <Text>Partido: {deputado.ultimoStatus.siglaPartido}</Text>
-                        : null}
-
-                        {deputado != '' ?
-                        <Text>E-mail: {deputado.ultimoStatus.email}</Text>
-                        : null}
-                        </Card>
-                    </Col>
-                </Row>
-            </div>
         </div>
         
     )

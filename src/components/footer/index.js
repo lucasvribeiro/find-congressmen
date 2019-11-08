@@ -5,7 +5,9 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      Footer!
+      <div className = "text-footer">
+        ® Made by Lucas V. Ribeiro
+      </div>
     </div>
   );
 }

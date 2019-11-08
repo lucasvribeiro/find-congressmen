@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Redirect } from 'react-router-dom'
-import { Typography, Select, Row, Col, Icon } from 'antd'
+import { Select, Icon } from 'antd'
 import axios from 'axios'
 
 import './index.css'
@@ -11,16 +11,16 @@ import MainLayout from '../../components/layout/index';
 
 const loadingGif = require('../../images/loading.gif');
 
-const { Text } = Typography
 const { Option } = Select
 
 const Home = () => {
     const [deputados, setDeputados] = useState([])
-    const [despesas, setDespesas] = useState([])
-    const [options, setOptions] = useState([])
-    const [campos, setCampos] = useState([])
     const [nav, setNav] = useState('')
     const [selectedMenu, setSelectedMenu] = useState('1')
+    const [options, setOptions] = useState([])
+
+    const [despesas, setDespesas] = useState([])
+    const [gastos, setGastos] = useState([])
 
     useEffect(() => {
         axios.get(`https://dadosabertos.camara.leg.br/api/v2/deputados`)
@@ -31,9 +31,9 @@ const Home = () => {
 
     useEffect(() => {
         const values = []
+
         const filteredDespesas = []
         const gastos = []
-        const despesasObject = []
 
         if(deputados.length && selectedMenu === '2') {
 
@@ -56,18 +56,24 @@ const Home = () => {
                                     gastos[index] += despesa.valorDocumento
                                 }
                             }
+
                             
                         }
 
-                        filteredDespesas.forEach((key, i) => despesasObject.push({y: gastos[i], label: key }))
-                        console.log(despesasObject);
+                        for(var i = 0; i < gastos.length; i++) {
+                            gastos[i] = Math.trunc(gastos[i])
+                        }
+
+                        setGastos(gastos)
+                        setDespesas(filteredDespesas)
+                        
                     }
                 })
             }
             
         }
-        setDespesas(despesasObject)
-        setCampos(filteredDespesas)
+
+        
         
     }, [deputados, selectedMenu])
 
@@ -107,7 +113,6 @@ const Home = () => {
                     <div className = "buscar">
                         Buscar Deputado...
                     </div>
-                    <Row gutter = {12}>
                         <Select
                                 suffixIcon = {<Icon type="search" />}
                                 className = "select"
@@ -122,13 +127,25 @@ const Home = () => {
                             >
                                 { options }
                         </Select>
-                    </Row>
 
 
-                </div> 
-                { selectedMenu === '1' ? <div>branco</div> : deputados.length != 100 ? 
+                </div>
+                    { selectedMenu === '1' ? <div></div> : despesas.length === 0 ? 
+                 
                  <img src = {loadingGif}   width = "100" height = "100"/>
-                : <div><Graph despesas = { despesas }/></div> }
+                : 
+                <div>
+                    <div className = "graph-title">
+                        Gráfico de Despesas
+                    </div>
+                    <div className = "graph">
+                        <Graph despesas = { despesas } gastos = { gastos }/>
+                    </div>
+                </div>
+                 }
+
+                    {/* <Graph despesas = { values.length === 10 ? despesas : [] } loading = {values.length === 10}/> */}
+                
 
                 
             </MainLayout>

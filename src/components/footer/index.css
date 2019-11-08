@@ -1,9 +1,18 @@
 .footer {
-    position: fixed;
+    position:fixed;
+    flex-shrink: 0;
     left: 0;
     bottom: 0;
+    height: 20px;
     width: 100%;
-    background-color: black;
-    color: white;
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
     text-align: center;
-  }
+}
+
+.text-footer {
+  text-align: right;
+  padding-right: 10px;
+  font-size: 10px !important;
+
+}

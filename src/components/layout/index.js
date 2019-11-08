@@ -14,7 +14,7 @@ const MainLayout = props => {
     <div className = "layout">
       <Layout>
         <Header onChange = { props.onChange } menu = { props.menu }/>
-        <Content>{props.children}</Content>
+          <Content>{props.children}</Content>
         <Footer>Footer</Footer>
       </Layout>
     </div>

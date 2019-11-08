@@ -1,3 +1,17 @@
+body{
+    overflow-x: hidden;
+}
+
+.graph-title{
+    padding: 5vw 0 2vw 10vw;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vw;
+    color: #0C5E3D;
+    background-color: white;
+
+}
+
 .buscar{
     padding: 150px 0 30px 0;
     margin: 2px 0 0 0;
@@ -26,4 +40,10 @@
     background-color: #0c5e3d1f !important;
     transition-duration: 0.5s !important;
 
+}
+
+.graph{
+    width: 80%;
+    left: 10%;
+    padding-bottom: 70px;
 }

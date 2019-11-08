@@ -1,19 +1,44 @@
-.profile-photo {
-    margin: 0 0 0 0;
-    text-align: center;
-    height: 14vw;
+.avatar {
+    
+    height: 20vmin;
+    width: 20vmin;
+    margin: 1vw 0 1vw 3vw !important;
 }
 
-.profile-card {
-    margin: 4vw auto;
-    width: 40%;
+.card-content {
+    margin-left: 4vw;
+    border-color: #3B9037;
+    color: #3B9037;
+}
 
-
+.card-title {
+    text-align: center;
 }
 
 .info {
-    margin: auto;
-    width: 40%;
+    padding-top: 24px;
+}
+
+.main-div {
+    background-image: url('../../images/background.jpeg');
+    position:absolute;
+	top:0;
+	left:0;
+	z-index:11;
+	width:100%;
+	height:100%;
+}
+
+.profile-card {
+    position: absolute;
+    top:2vh;
+    left:30vw;
+    z-index:12;
+    /* text-align: center; */
+    margin: 0;
+    width:40vw;
+	height:96vh;
+
 }
 
 .avatar {
@@ -23,38 +48,48 @@
 .nome-eleitoral {
     margin: 0 0 0 0;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2vw;
 }
 
 .nome-civil {
     margin: 0 0 0 0;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1vw;
     font-style: italic;
 
 }
 
-.ant-card-meta-detail {
+/* .ant-card-meta-detail {
     overflow: hidden;
-    margin-top: 24px;
 }
 
 .ant-card-meta-title {
     overflow: hidden;
     margin-bottom: 0px !important;
     color: rgba(0, 0, 0, 0.85);
-    font-weight: 500;
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
 .ant-card-meta-description {
     color: rgba(0, 0, 0, 0.45);
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
     font-style: italic;
+}
+
+.ant-card-meta-avatar {
+    float: left;
+    padding-right: 0 !important;
+}
+
+.ant-card-meta-detail {
+    overflow: hidden;
+    margin-top: 42px;
+} */
+
+.ant-card-meta-detail {
+    overflow: hidden;
+    padding-top: 3vw;
 }
