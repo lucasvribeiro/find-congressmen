@@ -1,5 +1,11 @@
+@media only screen and (max-width: 750px) {
+    .profile-card {
+        left: 12vw !important;
+        width: 76vw !important;
+    }
+}
+
 .avatar {
-    
     height: 20vmin;
     width: 20vmin;
     margin: 1vw 0 1vw 3vw !important;
@@ -34,7 +40,6 @@
     top:2vh;
     left:30vw;
     z-index:12;
-    /* text-align: center; */
     margin: 0;
     width:40vw;
 	height:96vh;
@@ -58,36 +63,6 @@
     font-style: italic;
 
 }
-
-/* .ant-card-meta-detail {
-    overflow: hidden;
-}
-
-.ant-card-meta-title {
-    overflow: hidden;
-    margin-bottom: 0px !important;
-    color: rgba(0, 0, 0, 0.85);
-    font-weight: 700;
-    font-size: 1vw;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.ant-card-meta-description {
-    color: rgba(0, 0, 0, 0.45);
-    font-size: 2vw;
-    font-style: italic;
-}
-
-.ant-card-meta-avatar {
-    float: left;
-    padding-right: 0 !important;
-}
-
-.ant-card-meta-detail {
-    overflow: hidden;
-    margin-top: 42px;
-} */
 
 .ant-card-meta-detail {
     overflow: hidden;
