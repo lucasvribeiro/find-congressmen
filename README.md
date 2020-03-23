@@ -11,7 +11,11 @@ This web-application was developed using ReactJS, HTML5 and CSS3.
 
 ### Rest API
 
-The data displayed in this application are provided by a public Rest API. The API docs are available at https://dadosabertos.camara.leg.br/swagger/api.html
+The data displayed in this application are provided by a public Rest API. The API docs are available [here.](https://dadosabertos.camara.leg.br/swagger/api.html)
+
+### Purpose
+
+This project was developed for a practice test for front-end developer. The test description can be foun [here.](https://github.com/lucasvribeiro/find-congressmen/blob/master/test-description.md)
 
 
 
