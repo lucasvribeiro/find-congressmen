@@ -1,8 +1,15 @@
-# appmoove front-end developer test.
-This is a repository for a front-end test of the appmoove company.
+# Find congressmen
 
-*The test desciption can be found [here](https://github.com/lucasvribeiro/appmoove-test/blob/master/test-description.md).*
+### Description
+
+This is a responsive web-application for searching congressmen. 
+In addition to searching and viewing a congressman's profile, it's possible to view a graph of the congressman's expenses.
+
+### Languages and Technologies
+
+This web-application was developed using ReactJS, HTML5 and CSS3.
 
 
 
-**Developed by Lucas Vinicius Ribeiro.**
+Available at: https://findcongressman.netlify.com/
+
