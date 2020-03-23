@@ -1,4 +1,4 @@
-# Appmoove: Practice test for front-end developer
+# Practice test for front-end developer
 
 ## Prerequisites
 * HTML5
