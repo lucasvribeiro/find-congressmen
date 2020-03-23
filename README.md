@@ -19,5 +19,5 @@ This project was developed for a practice test for front-end developer. The test
 
 
 
-**[👨‍⚖️  Access the Find Congressman](https://findcongressmen.netlify.com/)**
+**[⚽  Access the Find Congressman](https://soccergames.netlify.com/)**
 
