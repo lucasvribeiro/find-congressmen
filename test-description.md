@@ -70,5 +70,3 @@ The profile section should be a page containing information from the deputy. It 
 ### Comments
 * The use of libraries and APIs is allowed.
 * The layout design is free.
-* Any questions send an email to contato@appmoove.com.br
-* Good luck!!!
