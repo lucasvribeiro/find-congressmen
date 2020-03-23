@@ -18,6 +18,4 @@ The data displayed in this application are provided by a public Rest API. The AP
 This project was developed for a practice test for front-end developer. The test description can be foun [here.](https://github.com/lucasvribeiro/find-congressmen/blob/master/test-description.md)
 
 
-
-**[⚽  Access the Find Congressman](https://soccergames.netlify.com/)**
-
+**[👨‍⚖️  Access the Find Congressman](https://findcongressmen.netlify.com/)**
