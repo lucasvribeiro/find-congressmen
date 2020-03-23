@@ -11,5 +11,5 @@ This web-application was developed using ReactJS, HTML5 and CSS3.
 
 
 
-Available at: https://findcongressman.netlify.com/
+Available at: https://findcongressmen.netlify.com/
 
